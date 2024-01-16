@@ -31,7 +31,7 @@ app.use((req, res, next) => {
   });
 
 //middlewares
-app.use(cors({origin:'graceful-gnome-e6fed6.netlify.app',credentials:true}))
+app.use(cors({origin:'https://graceful-gnome-e6fed6.netlify.app',credentials:true}))
 dotenv.config()
 app.use(express.json())
 app.use("/images",express.static(path.join(__dirname,"/images")))
